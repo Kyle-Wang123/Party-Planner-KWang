@@ -46,7 +46,7 @@ public class PartyPlannerMain
 			Scanner myReader = new Scanner(myObj);
 			while (myReader.hasNextLine()) 
 			{
-				boolean canAdd2Tab = true;
+				int canAdd2Tab = 0;
 				
 				String[] data = myReader.nextLine().split(",");
 				
@@ -54,24 +54,22 @@ public class PartyPlannerMain
 				int idHold = Integer.parseInt(idStr) - 1;
 				String nameHold = data[1]+" "+data[2];
 				if (party.canAdd() == true)
-				{
+			    {
 					for (Table table1 : partyTabs)
 					{
-						if (table1.canAdd() == false)
+						if (table1.canAdd() == true)
 						{
-							canAdd2Tab = false;
-							break;
+							canAdd2Tab++;
 						}
 					} 
-					if (listOfComps[idHold].canAdd() == true && canAdd2Tab == true)
+					if (listOfComps[idHold].canAdd() == true && canAdd2Tab > 0)
 					{
 						System.out.println(data[1] +" "+data[3]);
 						Person holdDude = new Person(nameHold, idHold);
 						for (int l = 0; l < numTables; l++)
 						{
 							if(partyTabs.get(l).canAdd(holdDude))
-							{
-								
+							{	
 								partyTabs.get(l).addPerson(holdDude);
 								party.addPerson(holdDude);
 								listOfComps[idHold].addPerson(holdDude);
