@@ -1,4 +1,6 @@
 /**Kyle Wang 
+ * 1/13/23
+ * Company.java
  * This is the company class. The company class is a subclass of the Group superclass. The main purpose of this class is to better
  * organize people by company so it is easier to print by company and store people into companies.
  **/
