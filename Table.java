@@ -1,48 +1,35 @@
+/**Kyle Wang
+ * This is the table subclass of the Group superclass. It's purpose is to help with better organization. The table subclass
+ * also contains tableNum which further helps with differentiating tables from each other.
+ **/
+
 import java.util.ArrayList;
 
 public class Table extends Group
 {
+	//local instance variables
 	private int tableNum;
 	private ArrayList<Person> peopleList;
 	
-	public Table(int size, int tableNum, String name)
+	public Table(int size, int tableNum, String name)//constructor
 	{
 		super(size, name);
 		this.tableNum = tableNum;
 		peopleList = super.getList();
 	}//Table
 
-	public boolean canAdd(Person attendee)
-	{
-			for (Person attend : peopleList)
-			{
-				if (attendee.getCompany() == attend.getCompany())
-				{
-					return false;
-				}//if
-			}//for
-		return true;
-	}//canAdd
-			
-			
-	public boolean addPerson(Person attendee)
-	{
-		ArrayList<Person> peopleList = getList();
-		if (super.canAdd() == true)
-		{
-			for (Person attend : peopleList)
-			{
-				if (attendee.getCompany() == attend.getCompany())
-				{
-					return false;
-				}//if
-			}//for
-			super.addPerson(attendee);
-			return true;
-		}//if
-		return false;
-	}//assignTable
+	//getter methods
+	public int tableNum()
+	{return tableNum;}
 	
-	public String toString()
-	{return getName();}
+	public String toString()//toString method
+	{
+		String str = super.toString();
+		for (int i = 0; i < getSize(); i++)
+		{
+			str += peopleList.get(i)+"\n";
+		}//for
+		return str;
+	}//toString
 }//Table
+
