@@ -1,4 +1,6 @@
 /** Kyle Wang
+ * 1/13/23
+ * Person.java
  * This is the person class and it contains information about an attendee including their name,
  * the company they work at, the table they're sitting at, and the seat they are sitting at.
  * It also contains mutator functions that change the seat they are sitting at.
