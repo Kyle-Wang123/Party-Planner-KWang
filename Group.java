@@ -1,4 +1,6 @@
 /** Kyle Wang
+ * 1/13/23
+ * Group.java
  * This is the group superclass. The purpose of this class is to generalize all types of groups(companies, parties, and tables).
  *  The group class is contains many key methods such as canAdd() which determines if a group object can have more ateendees
  *  added to it. It also contains addPerson(Person attendee) which adds a Person object to the ArrayList of Person objects that
