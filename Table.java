@@ -1,4 +1,6 @@
 /**Kyle Wang
+ * 1/13/23
+ * Table.java
  * This is the table subclass of the Group superclass. It's purpose is to help with better organization. The table subclass
  * also contains tableNum which further helps with differentiating tables from each other.
  **/
