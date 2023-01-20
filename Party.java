@@ -1,4 +1,6 @@
 /**Kyle Wang
+ * 1/13/23
+ * Party.java
  * This is the party subclass which is an extension of the Group superclass. The Party class will automatically create an ArrayList of Table
  * objects which makes it easier to find a specified table. The party subclass has many important functions such as the the addMore() 
  * and the search(String findPer, ArrayList<Table> findArr) functions. The addMore() function allows the user to manually add in attendees.
