@@ -1,5 +1,6 @@
-# Party-Planner-KWang
-AP Computer Science Project
+# Party-Planner
+# Kyle Wang
+## AP Computer Science Project
 The purpose of this program is plan a party for a group of 16 companies. The party has a maximum number of attendees of 100 people.
 There will be 10 tables with 10 people at each table. Each company cannot have more than 10 people at the party.
 There can not be two people from the same company at each table. The goal is take a csv or txt file with people and the company they work for
