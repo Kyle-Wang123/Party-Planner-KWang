@@ -4,7 +4,7 @@
  * This is the driver/tester class. It starts by asking the user how large the party is, how many tables are there,
  * how many people are at each table, and the name of the party. It then looks through attendees.csv and sorts them into companies.
  * If a company is full, it won't add it to the company roster. It then calls the addMore() function in the party class. The program
- * then prompts the user if the user would like to see the attendees organized by tables or by companies. Finally, the program prompts the 
+ * then prints the attendees by table and companies. Finally, the program prompts the 
  * user if they would like to search for an attendee. If the answer is yes, then the user must provide the name of the attendee they
  * wish to search for.
  **/
@@ -96,19 +96,11 @@ public class PartyPlannerMain
 			}//for
 		}//for
 		
-		System.out.print("Would you like to print by company or table? ");//asing if they would like to print by table or company
-		String print = scan.nextLine();
-		if (print.equalsIgnoreCase("table") == true)//if they wish to print by table
-		{    
-			System.out.println(party);
-		}//if
-		else if(print.equalsIgnoreCase("company") == true)//if they wish to print by company
+		System.out.println(party);//printing by table
+		for(int k = 0; k < numCompanies; k++)//goes through listOfComps
 		{
-			for(int k = 0; k < numCompanies; k++)//goes through listOfComps
-			{
-				System.out.println(listOfComps[k]);
-			}//for
-		}//elif
+			System.out.println(listOfComps[k]);//prints each company's roster
+		}//for
 		
 		System.out.print("Would you like to search for an attendee? ");//asking if they would like to search for a  person
 		String searchYN = scan.nextLine();
