@@ -1,4 +1,6 @@
 /** Kyle Wang
+ * 1/13/23
+ * PartyPlannerMain.java
  * This is the driver/tester class. It starts by asking the user how large the party is, how many tables are there,
  * how many people are at each table, and the name of the party. It then looks through attendees.csv and sorts them into companies.
  * If a company is full, it won't add it to the company roster. It then calls the addMore() function in the party class. The program
