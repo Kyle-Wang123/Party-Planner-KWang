@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 
 public class PartyPlannerMain
- {
+{
 	
 	public static void main (String[] args) {
 		//initializing vars and objects
